@@ -1,16 +1,15 @@
 # TODO List for game development
 
 1. Create art for the game
-    - [ ] Design dashboard png art with 5 guage placement
+    - [x] Design dashboard png art with 5 guage placement
     - [ ] Design dashboard png art with 7 guage placement
     - [ ] Design dashboard png art with 10 guage placement
     - [x] Design guage png art 1
     - [x] Design guage png art 2
     - [x] Design guage png art 3
     - [x] Design guage png art 4
-    - [ ] Design pin png art for guage 1
-    - [ ] Design pin png art for guage 2
-    - [ ] Design pin png art for guage 3
+    - [x] Design pin png art for guage 1
+    - [x] Design pin png art for guage 2
     - [ ] Design meter png art 1
     - [ ] Design meter png art 2
     - [ ] Design pin png art for meter
