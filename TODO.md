@@ -14,7 +14,7 @@
     - [x] Design meter cover png art
     - [x] Design pin png art for meter
     - [ ] Design bomb squad logo png art
-    - [ ] Design bomb diffuser pin png art
+    - [x] Design bomb diffuser pin png art
     - [ ] Design background art for game level
 
 2. Create initial game level
