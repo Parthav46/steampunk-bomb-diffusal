@@ -10,9 +10,9 @@
     - [x] Design guage png art 4
     - [x] Design pin png art for guage 1
     - [x] Design pin png art for guage 2
-    - [ ] Design meter png art 1
-    - [ ] Design meter png art 2
-    - [ ] Design pin png art for meter
+    - [x] Design meter png art
+    - [x] Design meter cover png art
+    - [x] Design pin png art for meter
     - [ ] Design bomb squad logo png art
     - [ ] Design bomb diffuser pin png art
     - [ ] Design background art for game level
