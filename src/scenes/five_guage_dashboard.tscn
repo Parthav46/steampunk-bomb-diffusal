@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://dj8isph1qki0e"]
+
+[ext_resource type="Texture2D" uid="uid://dsx1s6ryahdvd" path="res://assets/image/dashboard/background_2.png" id="1_2li74"]
+[ext_resource type="Script" uid="uid://cemjkkp4kwdil" path="res://src/scripts/FiveGuageDashboard.cs" id="1_4gl36"]
+[ext_resource type="Texture2D" uid="uid://bu21jxw1syo8u" path="res://assets/image/meter/meter_label.png" id="2_82c5w"]
+[ext_resource type="Texture2D" uid="uid://7n6r6tf7avmo" path="res://assets/image/guage/guage_1.png" id="2_fhxs2"]
+[ext_resource type="Texture2D" uid="uid://bdnwocjpp7cds" path="res://assets/image/guage/guage_2.png" id="3_ndjv7"]
+[ext_resource type="Texture2D" uid="uid://dnsbm64wa04op" path="res://assets/image/meter/meter_cover.png" id="3_r1h4k"]
+[ext_resource type="Texture2D" uid="uid://bsnqmu751hh2c" path="res://assets/image/dashboard/five_guage_dashboard.png" id="4_7d0ln"]
+[ext_resource type="Texture2D" uid="uid://cgcqux3wflc3p" path="res://assets/image/guage/guage_3.png" id="4_52y3x"]
+[ext_resource type="Texture2D" uid="uid://b51fenihr5nmd" path="res://assets/image/guage/guage_4.png" id="5_4qtyt"]
+[ext_resource type="Texture2D" uid="uid://b4e6np2gt4h34" path="res://assets/image/pin/guage_pin_1.png" id="6_urmgw"]
+[ext_resource type="Texture2D" uid="uid://cw2oh3vjtqmud" path="res://assets/image/pin/guage_pin_2.png" id="7_ch1tj"]
+[ext_resource type="PackedScene" uid="uid://gqahc3oibhao" path="res://src/scenes/guage.tscn" id="8_fhxs2"]
+[ext_resource type="PackedScene" uid="uid://dj0j72k4gahq" path="res://src/scenes/meter_pin.tscn" id="11_ndjv7"]
+
+[node name="5GD" type="Node2D" unique_id=1856888395]
+script = ExtResource("1_4gl36")
+GuageTextures = Array[Texture2D]([ExtResource("2_fhxs2"), ExtResource("3_ndjv7"), ExtResource("4_52y3x"), ExtResource("5_4qtyt")])
+PinTextures = Array[Texture2D]([ExtResource("6_urmgw"), ExtResource("7_ch1tj")])
+GuageScene = ExtResource("8_fhxs2")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=939949284]
+position = Vector2(960, 540)
+texture = ExtResource("1_2li74")
+
+[node name="MeterLabel" type="Sprite2D" parent="." unique_id=1838278433]
+position = Vector2(1400, 560)
+texture = ExtResource("2_82c5w")
+
+[node name="MeterPin" parent="." unique_id=1431192847 instance=ExtResource("11_ndjv7")]
+position = Vector2(1296, 557)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="MeterCover" type="Sprite2D" parent="." unique_id=954764076]
+position = Vector2(1400, 560)
+texture = ExtResource("3_r1h4k")
+
+[node name="FiveGuageDashboard" type="Sprite2D" parent="." unique_id=44747043]
+position = Vector2(960, 540)
+texture = ExtResource("4_7d0ln")
+
+[node name="Guage1Marker" type="Marker2D" parent="." unique_id=77469641 groups=["guage_markers"]]
+position = Vector2(382, 443)
+
+[node name="Guage2Marker" type="Marker2D" parent="." unique_id=915650216 groups=["guage_markers"]]
+position = Vector2(725, 451)
+
+[node name="Guage3Marker" type="Marker2D" parent="." unique_id=1070680715 groups=["guage_markers"]]
+position = Vector2(1068, 454)
+
+[node name="Guage4Marker" type="Marker2D" parent="." unique_id=954476126 groups=["guage_markers"]]
+position = Vector2(549, 743)
+
+[node name="Guage5Marker" type="Marker2D" parent="." unique_id=1831104258 groups=["guage_markers"]]
+position = Vector2(894, 735)

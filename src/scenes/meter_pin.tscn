@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dj0j72k4gahq"]
+
+[ext_resource type="Script" uid="uid://d4lefl4gpm1f0" path="res://src/scripts/MeterPin.cs" id="1_u1hxb"]
+[ext_resource type="Texture2D" uid="uid://ckts7goolra01" path="res://assets/image/pin/meter_pin.png" id="1_wnpcw"]
+
+[node name="MeterPin" type="Node2D" unique_id=1431192847]
+rotation = -1.0646509
+script = ExtResource("1_u1hxb")
+
+[node name="Pin" type="Sprite2D" parent="." unique_id=895497466]
+texture = ExtResource("1_wnpcw")
+offset = Vector2(105, 3)
