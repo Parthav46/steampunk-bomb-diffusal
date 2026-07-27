@@ -18,11 +18,11 @@
     - [ ] Design background art for game level
 
 2. Create initial game level
-    - [ ] Create class for guage (manage movement, interaction, )
-    - [ ] Create initial code for guage diffuser pin insertion
-    - [ ] Create initial code for meter movement
-    - [ ] Create initial code for bomb explosion
-    - [ ] Create initial code for bomb defusal success
+    - [x] Create class for guage (manage movement, interaction)
+    - [x] Create initial code for guage diffuser pin insertion
+    - [x] Create initial code for meter movement
+    - [x] Create initial code for bomb explosion
+    - [x] Create initial code for bomb defusal success
 
 2. Record and edit audio for the game
     - [ ] Record sound effect for guage movement
