@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bukfqxxxbm3cn"]
+
+[ext_resource type="PackedScene" uid="uid://c8f4irr7e3fcg" path="res://src/scenes/start.tscn" id="1_u5uw0"]
+[ext_resource type="Script" uid="uid://dqs03vkuhxvxl" path="res://src/scripts/Hud.cs" id="1_ygq70"]
+[ext_resource type="PackedScene" uid="uid://cxuaw3prilwb8" path="res://src/scenes/kill_screen.tscn" id="2_3i2um"]
+[ext_resource type="PackedScene" uid="uid://dj8isph1qki0e" path="res://src/scenes/five_guage_dashboard.tscn" id="2_erks1"]
+
+[node name="HUD" type="Node" unique_id=1854586839]
+script = ExtResource("1_ygq70")
+GameScene = ExtResource("2_erks1")
+
+[node name="StartScreen" parent="." unique_id=93901336 instance=ExtResource("1_u5uw0")]
+
+[node name="Level" type="Node2D" parent="." unique_id=1716432126]
+
+[node name="KillScreen" parent="." unique_id=1141199341 instance=ExtResource("2_3i2um")]
+visible = false
+
+[connection signal="StartGame" from="StartScreen" to="." method="OnStartButtonPressed"]
+[connection signal="Reset" from="KillScreen" to="." method="Reset"]

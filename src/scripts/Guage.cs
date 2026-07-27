@@ -52,7 +52,6 @@ public partial class Guage : Node2D
         _isDiffused = true;
         _diffusal.Visible = true;
         UpdateOutput();
-        EmitSignal(SignalName.Diffused, _ratio);
     }
 
     public override void _Process(double delta)
@@ -68,7 +67,8 @@ public partial class Guage : Node2D
     {
         if (@event is InputEventMouseButton mouseEvent && mouseEvent.Pressed)
         {
-            Diffuse();
+            if (_isDiffused) return;
+            EmitSignal(SignalName.Diffused, _ratio);
         }
     }
 

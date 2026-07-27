@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://cxuaw3prilwb8"]
+
+[ext_resource type="Texture2D" uid="uid://bglipl1lknmyw" path="res://assets/image/dashboard/background.png" id="1_nhmg6"]
+[ext_resource type="Script" uid="uid://d344mx28bx4hd" path="res://src/scripts/KillScreen.cs" id="2_mtucb"]
+[ext_resource type="FontFile" uid="uid://cxdrq03gjju51" path="res://assets/font/Smokum/Smokum-Regular.ttf" id="2_v1xg1"]
+
+[node name="KillScreen" type="Sprite2D" unique_id=1141199341]
+texture = ExtResource("1_nhmg6")
+centered = false
+script = ExtResource("2_mtucb")
+
+[node name="BoomText" type="Label" parent="." unique_id=1191715071]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -862.0
+offset_top = 100.0
+offset_right = 862.0
+offset_bottom = 491.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.38143936, 3.308989e-07, 1.6845763e-07, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
+theme_override_fonts/font = ExtResource("2_v1xg1")
+theme_override_font_sizes/font_size = 320
+text = "Psss.... BOOOM!!!"
+
+[node name="Comment" type="Label" parent="." unique_id=1635913109]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -533.0
+offset_top = -198.0
+offset_right = 533.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_v1xg1")
+theme_override_font_sizes/font_size = 80
+text = "You diffused {X} bombs though. Good Job"
+
+[node name="ResetTimer" type="Timer" parent="." unique_id=780002708]
+wait_time = 10.0
+one_shot = true

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Steampunk Bomb Diffusal"
-run/main_scene="uid://dj8isph1qki0e"
+run/main_scene="uid://bukfqxxxbm3cn"
 config/features=PackedStringArray("4.7", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 

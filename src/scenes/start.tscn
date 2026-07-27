@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://c8f4irr7e3fcg"]
+
+[ext_resource type="Texture2D" uid="uid://dsx1s6ryahdvd" path="res://assets/image/dashboard/background_2.png" id="1_tio3v"]
+[ext_resource type="Script" uid="uid://703my4frshoj" path="res://src/scripts/Start.cs" id="2_sfyg4"]
+[ext_resource type="FontFile" uid="uid://cxdrq03gjju51" path="res://assets/font/Smokum/Smokum-Regular.ttf" id="2_u576w"]
+
+[node name="StartScreen" type="Sprite2D" unique_id=93901336]
+texture = ExtResource("1_tio3v")
+centered = false
+script = ExtResource("2_sfyg4")
+
+[node name="Title" type="Label" parent="." unique_id=1775456011]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -678.5
+offset_top = 100.0
+offset_right = 678.5
+offset_bottom = 296.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_u576w")
+theme_override_font_sizes/font_size = 160
+text = "Steampunk Bomb Diffusal"
+
+[node name="Start" type="Button" parent="." unique_id=1435734838]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -142.5
+offset_top = -102.0
+offset_right = 142.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_u576w")
+theme_override_font_sizes/font_size = 160
+text = "Start"
+
+[node name="Instructions" type="Label" parent="." unique_id=1902864271]
+custom_minimum_size = Vector2(1650, 0)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -825.0
+offset_top = -250.0
+offset_right = 825.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_u576w")
+theme_override_font_sizes/font_size = 64
+text = "Find the guage that is driving the whole mechanism before time runs out.
+Hints: 
+1. The driving guage does not change speed if any other guage is stopped.
+2. Remaining time is variable and changes based on your actions."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[connection signal="pressed" from="Start" to="." method="OnStartButtonPressed"]

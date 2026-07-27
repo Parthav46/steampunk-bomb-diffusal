@@ -3,6 +3,8 @@ using System;
 
 public partial class MeterPin : Node2D
 {
+    [Signal]
+    public delegate void TimeoutEventHandler();
     private const float Offset = -Mathf.Pi / 3;
     private const float RotationMultiplier = Mathf.Pi / 30;
     private float progress = 0; // To 600
@@ -19,7 +21,7 @@ public partial class MeterPin : Node2D
         if (progress > 20)
         {
             progress = 20;
-            GD.Print("Blast");
+            EmitSignal(SignalName.Timeout);
         }
         float rotation = progress * RotationMultiplier;
         rotation += Offset;

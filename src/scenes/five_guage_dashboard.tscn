@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://cw2oh3vjtqmud" path="res://assets/image/pin/guage_pin_2.png" id="7_ch1tj"]
 [ext_resource type="PackedScene" uid="uid://gqahc3oibhao" path="res://src/scenes/guage.tscn" id="8_fhxs2"]
 [ext_resource type="PackedScene" uid="uid://dj0j72k4gahq" path="res://src/scenes/meter_pin.tscn" id="11_ndjv7"]
+[ext_resource type="Texture2D" uid="uid://jb4niuec4w1u" path="res://assets/image/pin/diffusal_pin.png" id="14_4qtyt"]
+[ext_resource type="FontFile" uid="uid://cxdrq03gjju51" path="res://assets/font/Smokum/Smokum-Regular.ttf" id="15_urmgw"]
 
 [node name="5GD" type="Node2D" unique_id=1856888395]
 script = ExtResource("1_4gl36")
@@ -54,3 +56,25 @@ position = Vector2(549, 743)
 
 [node name="Guage5Marker" type="Marker2D" parent="." unique_id=1831104258 groups=["guage_markers"]]
 position = Vector2(894, 735)
+
+[node name="PinList" type="ItemList" parent="." unique_id=376464214]
+offset_left = 1748.0
+offset_top = 252.0
+offset_right = 1878.0
+offset_bottom = 632.0
+theme_override_constants/h_separation = 4
+theme_override_constants/v_separation = 4
+item_count = 3
+fixed_icon_size = Vector2i(120, 120)
+item_0/icon = ExtResource("14_4qtyt")
+item_1/icon = ExtResource("14_4qtyt")
+item_2/icon = ExtResource("14_4qtyt")
+
+[node name="Label" type="Label" parent="." unique_id=1634343907]
+offset_left = 1751.0
+offset_top = 200.0
+offset_right = 1871.0
+offset_bottom = 249.0
+theme_override_fonts/font = ExtResource("15_urmgw")
+theme_override_font_sizes/font_size = 40
+text = "Attempts"
