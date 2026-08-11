@@ -38,6 +38,8 @@ public partial class Guage : Node2D
 
         _diffusal = GetNode<Sprite2D>("DiffusalPin");
         _diffusal.Visible = false;
+
+        GetNode<Area2D>("Area").InputEvent += OnGuageEvent;
     }
 
     public void SetSpeed(float speed)
@@ -63,7 +65,7 @@ public partial class Guage : Node2D
         _pin.Rotation += (float) rotation;
     }
 
-    public void OnGuageEvent(Viewport viewport, InputEvent @event, int shapeIdx)
+    public void OnGuageEvent(Node viewport, InputEvent @event, long shapeIdx)
     {
         if (@event is InputEventMouseButton mouseEvent && mouseEvent.Pressed)
         {

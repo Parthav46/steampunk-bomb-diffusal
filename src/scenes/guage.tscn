@@ -23,5 +23,3 @@ texture = ExtResource("3_sxexd")
 
 [node name="CollisionShape" type="CollisionShape2D" parent="Area" unique_id=1589056947]
 shape = SubResource("CircleShape2D_2ctfx")
-
-[connection signal="input_event" from="Area" to="." method="OnGuageEvent"]

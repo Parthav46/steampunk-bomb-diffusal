@@ -8,6 +8,12 @@ public partial class Hud : Node
     private int _runId;
     private FiveGuageDashboard _currentLevel;
 
+    public override void _Ready()
+    {
+        GetNode<Start>("StartScreen").StartGame += OnStartButtonPressed;
+        GetNode<KillScreen>("KillScreen").Reset += Reset;
+    }
+
     private void OnStartButtonPressed()
     {
         GetNode<Sprite2D>("StartScreen").Visible = false;

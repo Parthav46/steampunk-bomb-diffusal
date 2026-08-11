@@ -60,5 +60,3 @@ Hints:
 2. Remaining time is variable and changes based on your actions."
 horizontal_alignment = 1
 autowrap_mode = 2
-
-[connection signal="pressed" from="Start" to="." method="OnStartButtonPressed"]

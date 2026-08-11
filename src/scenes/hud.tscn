@@ -15,6 +15,3 @@ GameScene = ExtResource("2_erks1")
 
 [node name="KillScreen" parent="." unique_id=1141199341 instance=ExtResource("2_3i2um")]
 visible = false
-
-[connection signal="StartGame" from="StartScreen" to="." method="OnStartButtonPressed"]
-[connection signal="Reset" from="KillScreen" to="." method="Reset"]
