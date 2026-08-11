@@ -2,3 +2,9 @@
 .godot/
 /android/
 build/
+
+# Ignore C# build artifacts
+bin/
+obj/
+
+AppBundle/

@@ -1,0 +1,17 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="ExportDebug" />
+    <BuildType Name="ExportRelease" />
+  </Configurations>
+  <Project Path="Steampunk Bomb Diffusal.2dog/Steampunk Bomb Diffusal.2dog.csproj">
+    <BuildType Project="Debug" />
+  </Project>
+  <Project Path="Steampunk Bomb Diffusal.csproj" />
+  <Project Path="Steampunk Bomb Diffusal.tests/Steampunk Bomb Diffusal.tests.csproj">
+    <BuildType Project="Debug" />
+  </Project>
+  <Project Path="Steampunk Bomb Diffusal.web/Steampunk Bomb Diffusal.web.csproj">
+    <BuildType Project="Debug" />
+  </Project>
+</Solution>
