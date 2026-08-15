@@ -130,7 +130,12 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000` in a browser.
 
-## License
+## Licensing
 
-- Code: MIT License. See [LICENSE](LICENSE).
-- Original image assets and artwork in the project: Creative Commons Attribution 4.0 International (CC BY 4.0). See [assets/image/LICENSE.md](assets/image/LICENSE.md).
+This project is multi-licensed:
+* **Code**: All source code is licensed under the [MIT License](LICENSE-CODE).
+* **Assets**: All original visual graphics, music, sound effects, and multimedia assets created for this project are licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0) License](LICENSE-ASSETS), excluding the third-party font files in [assets/font](assets/font), which retain their own licensing terms.
+
+### Attribution
+If you use the assets from this repository, you must give appropriate credit. 
+Example attribution: "Assets by Parthav Patel, used under CC BY 4.0."
