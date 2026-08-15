@@ -25,7 +25,7 @@
         "run",
         "--project",
         "sbd.2dog",
-        "--configuration",
+        "-c",
         "Debug"
       ],
       "options": {

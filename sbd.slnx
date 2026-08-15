@@ -1,8 +1,7 @@
 <Solution>
   <Configurations>
     <BuildType Name="Debug" />
-    <BuildType Name="ExportDebug" />
-    <BuildType Name="ExportRelease" />
+    <BuildType Name="Release" />
   </Configurations>
   <Project Path="sbd.2dog/sbd.2dog.csproj">
     <BuildType Project="Debug" />
