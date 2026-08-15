@@ -1,7 +1,10 @@
 {
-  "$comment": "Pins a .NET 10 SDK with the wasm-tools workload for the whole project, so the web host publishes from the project root too (global.json applies at or below its own directory).",
+  "$comment": "Pins a .NET 10 SDK with the wasm-tools workload for the whole project, so the web host publishes from the project root too (global.json applies at or below its own directory). Also opts in to the Microsoft.Testing.Platform dotnet test runner required by newer SDKs.",
   "sdk": {
     "version": "10.0.100",
     "rollForward": "latestFeature"
+  },
+  "test": {
+    "runner": "Microsoft.Testing.Platform"
   }
 }
