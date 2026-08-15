@@ -12,7 +12,7 @@
     <!-- 2dog packages (2dog.xunit pulls in 2dog.engine for the fixtures and ships the xUnit
          collection definitions as compile-in source) -->
     <ItemGroup>
-        <PackageReference Include="2dog.xunit" Version="4.7.1.70"/>
+        <PackageReference Include="2dog.xunit" Version="4.7.1.71"/>
     </ItemGroup>
 
     <!-- Native library packages arrive transitively: 2dog exact-pins the platform
@@ -23,8 +23,8 @@
     <ItemGroup>
         <PackageReference Include="coverlet.collector" Version="10.*"/>
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.*"/>
-        <PackageReference Include="xunit.v3" Version="3.*"/>
-        <PackageReference Include="xunit.runner.visualstudio" Version="3.*"/>
+        <PackageReference Include="xunit.v3" Version="4.*"/>
+        <PackageReference Include="xunit.runner.visualstudio" Version="4.*"/>
     </ItemGroup>
 
     <ItemGroup>
