@@ -1,1 +1,1 @@
-This folder contains third-party font assets and is not covered by the repository's Creative Commons Attribution 4.0 International (CC BY 4.0) asset license. These font files retain their own license terms; see the font package's included license file in this folder for details.
+This folder contains third-party font assets and is not covered by the repository's Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) asset license. These font files retain their own license terms; see the font package's included license file in this folder for details.
