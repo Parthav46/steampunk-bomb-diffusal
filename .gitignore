@@ -12,3 +12,16 @@ AppBundle/
 
 # Ignore MacOS specific files
 .DS_Store
+
+# Local environment and secret-bearing files
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+*.crt
+
+# Godot local export credentials
+.godot/export_credentials.cfg
