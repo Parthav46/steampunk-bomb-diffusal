@@ -58,26 +58,79 @@ Use this to test candidates and infer which gauge is upstream from all others.
 
 - Engine: Godot 4.7
 - Language: C#
-- .NET target: net8.0
+- .NET target: net10.0
+- 2dog host: desktop and browser hosts via NuGet packages
+- Test framework: xUnit via 2dog/xUnit integration
+
+## Project Layout
+
+- `sbd.csproj` — the Godot game project
+- `sbd.2dog/` — desktop host for local debugging and running
+- `sbd.web/` — browser host for WebAssembly publishing
+- `sbd.tests/` — automated tests
+
+## Required Dependencies
+
+Install the required SDK and tooling before building or publishing:
+
+```bash
+dotnet --version
+```
+
+This project pins .NET 10 via `global.json`:
+
+```bash
+dotnet restore sbd.slnx
+```
+
+For the browser host, install the WebAssembly workload:
+
+```bash
+dotnet workload install wasm-tools
+```
+
+The project also uses 2dog packages referenced from the host projects:
+
+- `2dog.engine`
+- `2dog.browser-wasm`
+- `2dog.xunit`
+
 
 ## Run the Game
 
 ### Option 1: Godot Editor
 
-1. Open the project in Godot 4.7 (C#/.NET enabled).
-2. Run the main scene.
+1. Open the project in Godot 4.7 with C#/.NET support enabled.
+2. Open the project root and run the main scene.
 
-### Option 2: Build from CLI
+### Option 2: Desktop debug via 2dog
 
 From the project root:
 
 ```bash
-dotnet build
+dotnet restore sbd.slnx
+dotnet build sbd.slnx
+dotnet run --project sbd.2dog --configuration Debug
 ```
 
-Then run from Godot or your preferred .NET/Godot workflow.
+### Option 3: Publish web build
+
+From the project root:
+
+```bash
+dotnet publish sbd.web -c Release
+```
+
+Then serve the generated AppBundle locally with a simple static server, such as VS Code Live Server or any local file server (for example, Python's built-in HTTP server):
+
+```bash
+cd sbd.web/AppBundle
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000` in a browser.
 
 ## License
 
 - Code: MIT License. See [LICENSE](LICENSE).
-- Original image assets and artwork in the project: Creative Commons Attribution 4.0 International (CC BY 4.0). See [ASSETS_LICENSE.md](ASSETS_LICENSE.md).
+- Original image assets and artwork in the project: Creative Commons Attribution 4.0 International (CC BY 4.0). See [assets/image/LICENSE.md](assets/image/LICENSE.md).
