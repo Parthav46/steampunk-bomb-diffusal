@@ -1,16 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
 <Solution>
   <Configurations>
     <BuildType Name="Debug" />
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="sbd.2dog/sbd.2dog.csproj">
-    <BuildType Project="Debug" />
-  </Project>
+    </Project>
   <Project Path="sbd.csproj" />
   <Project Path="sbd.tests/sbd.tests.csproj">
-    <BuildType Project="Debug" />
-  </Project>
+    </Project>
   <Project Path="sbd.web/sbd.web.csproj">
-    <BuildType Project="Debug" />
-  </Project>
+    </Project>
 </Solution>
