@@ -24,7 +24,7 @@
       "args": [
         "run",
         "--project",
-        "Steampunk Bomb Diffusal.2dog",
+        "sbd.2dog",
         "--configuration",
         "Debug"
       ],
@@ -42,7 +42,7 @@
       "command": "dotnet",
       "args": [
         "publish",
-        "Steampunk Bomb Diffusal.web",
+        "sbd.web",
         "-c",
         "Release"
       ],
@@ -60,7 +60,7 @@
       "command": "dotnet",
       "args": [
         "publish",
-        "Steampunk Bomb Diffusal.web",
+        "sbd.web",
         "-c",
         "Debug"
       ],

@@ -6,7 +6,7 @@
         <IsPackable>false</IsPackable>
         <!-- Keep host namespaces uniform with the desktop host (whose
              '.2dog' assembly name is not a valid namespace). -->
-        <RootNamespace>Steampunk Bomb Diffusal.Tests</RootNamespace>
+        <RootNamespace>sbd.Tests</RootNamespace>
     </PropertyGroup>
 
     <!-- 2dog packages (2dog.xunit pulls in 2dog.engine for the fixtures and ships the xUnit
@@ -36,7 +36,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="../Steampunk Bomb Diffusal.csproj"/>
+        <ProjectReference Include="../sbd.csproj"/>
     </ItemGroup>
 
     <!-- Godot project location: the parent directory (hosts are nested inside

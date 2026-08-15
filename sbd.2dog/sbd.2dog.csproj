@@ -7,9 +7,9 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <IsPackable>false</IsPackable>
-        <!-- The assembly keeps the folder name, but 'Steampunk Bomb Diffusal.2dog' is
+        <!-- The assembly keeps the folder name, but 'sbd.2dog' is
              not a valid C# namespace (digit-leading segment). -->
-        <RootNamespace>Steampunk Bomb Diffusal</RootNamespace>
+        <RootNamespace>sbd</RootNamespace>
         <!-- comctl32 v6 + long paths for Godot's Windows display server -->
         <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="../Steampunk Bomb Diffusal.csproj"/>
+        <ProjectReference Include="../sbd.csproj"/>
     </ItemGroup>
 
     <!-- Godot project location: the parent directory (the Godot project is the
