@@ -1,15 +1,76 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "dotnet",
-			"task": "build",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"problemMatcher": [],
-			"label": "build"
-		}
-	]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "dotnet: restore",
+      "type": "dotnet",
+      "task": "restore",
+      "problemMatcher": []
+    },
+    {
+      "label": "dotnet: build",
+      "type": "dotnet",
+      "task": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "dotnet: debug desktop",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "Steampunk Bomb Diffusal.2dog",
+        "--configuration",
+        "Debug"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": [
+        "dotnet: build"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "dotnet: publish web",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "publish",
+        "Steampunk Bomb Diffusal.web",
+        "-c",
+        "Release"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": [
+        "dotnet: build"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "dotnet: publish web debug",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "publish",
+        "Steampunk Bomb Diffusal.web",
+        "-c",
+        "Debug"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": [
+        "dotnet: build"
+      ],
+      "problemMatcher": []
+    }
+  ]
 }
