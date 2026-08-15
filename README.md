@@ -76,3 +76,8 @@ dotnet build
 ```
 
 Then run from Godot or your preferred .NET/Godot workflow.
+
+## License
+
+- Code: MIT License. See [LICENSE](LICENSE).
+- Original image assets and artwork in the project: Creative Commons Attribution 4.0 International (CC BY 4.0). See [ASSETS_LICENSE.md](ASSETS_LICENSE.md).
