@@ -1,4 +1,5 @@
 # Steampunk Bomb Diffusal
+[![CI](https://github.com/Parthav46/steampunk-bomb-diffusal/actions/workflows/ci.yml/badge.svg)](https://github.com/Parthav46/steampunk-bomb-diffusal/actions/workflows/ci.yml)
 
 Steampunk Bomb Diffusal is a fast, pattern-reading mini-game built with Godot 4 and C#.
 You are trying to identify the one gauge that drives the entire mechanism before the timer meter reaches maximum.
