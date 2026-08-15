@@ -39,7 +39,7 @@ jobs:
         run: dotnet restore
 
       - name: Build desktop (for Godot resources)
-        run: dotnet build sbd.2dog -c Release --no-restore
+        run: dotnet build -c Release --no-restore
 
       - name: Publish web release bundle
         run: dotnet publish sbd.web -c Release --no-restore --no-build
