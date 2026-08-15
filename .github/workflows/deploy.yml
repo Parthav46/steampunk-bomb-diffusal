@@ -38,7 +38,7 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
-      - name: Build desktop (for Godot resources)
+      - name: Build for Godot resources
         run: dotnet build -c Release --no-restore
 
       - name: Publish web release bundle
