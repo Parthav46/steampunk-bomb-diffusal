@@ -12,6 +12,7 @@
     </PropertyGroup>
     <!-- added by the 2dog tool: compiles the web bootstrap (in the web host folder) into this game assembly -->
     <ItemGroup>
+      <PackageReference Include="GodotSharpEditor" Version="4.7.2" />
         <Compile Include="sbd.web/TwoDogWebBoot.cs" Condition="Exists('$(MSBuildThisFileDirectory)sbd.web/TwoDogWebBoot.cs')" />
     </ItemGroup>
 </Project>
